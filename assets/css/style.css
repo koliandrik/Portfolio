@@ -30,12 +30,12 @@ h2 {
 
 h1 {
     font-size: 4.5rem;
-    padding: 1rem;
+    padding: 1rem 3rem;
     align-items: center;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 header {
@@ -43,6 +43,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem 0;
+    margin: 0 0 2rem;
     color: var(--yellow);
     background-color: var(--blue);
 }
@@ -58,19 +59,32 @@ footer{
 nav ul {
     display: flex;
     justify-content: space-between;
-    
 }
 
 nav a {
-    font-size: 1.75rem;
+    font-size: 2.5rem;
     color: var(--yellow);
     font-weight: bold;
+    padding: 2rem;
     text-decoration: none;
     margin: 2rem;
 }
 
+nav a:link,
+nav a:visited,
+nav a:focus {
+  background: var(--blue);
+  color: var(--yellow);
+}
+
 nav a:hover {
-    color: var(--orange);
+    color: var(--blue);
+    background-color: var(--yellow);
+}
+
+nav a:active {
+    background-color: var(--orange);
+    color:cyan;
 }
 
 main {
@@ -83,15 +97,13 @@ section {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 2rem 0 0;
+    justify-content: center;
     background-color: var(--yellow);
 }
 
 section img {
     display: flex;
     border: 2px solid var(--blue);
-
 }
 
 .headshot {
@@ -110,7 +122,9 @@ section h2 {
 }
 
 p {
+    font-size: 2rem;
     margin: 2rem;
+    padding: 2rem 0 0;
 }
 
 .row {
@@ -118,7 +132,7 @@ p {
     flex-wrap: wrap;
     flex-direction: row;
     margin: 2rem;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .justify-center {
@@ -135,21 +149,28 @@ p {
 }
 
 figcaption {
-    background-color: #222;
-    color: #fff;
+    background-color: var(--blue);
+    color: var(--yellow);
     font: italic smaller sans-serif;
     padding: 3px;
     text-align: center;
-  }
+    text-decoration: none;
+}
 
 .card-body {
     display: flex;
     justify-content: center;
+    flex-grow: 1;
+}
+
+.work-card:hover {
+  box-shadow: inset 0px 0px 8px var(--blue), 0 0 15px var(--blue);
 }
 
 #contact-me {
     text-align: center;
-    color: var(--redder)
+    color: var(--redder);
+    font-weight: bolder;
 }
 
 #about-me {
@@ -161,8 +182,14 @@ figcaption {
 @media screen and (max-width: 768px) {
     header {
       flex-direction: column;
-      text-align: center;
+      text-align:end;
       justify-content: center;
+      margin:0 0 2rem;
+      max-height: 15rem;
+    }
+
+    nav ul {
+        padding: 2rem 0 0;
     }
 
     nav a {
@@ -175,5 +202,14 @@ figcaption {
 
     main {
         max-width: 1200px;
-      }
+    }
+
+    p {
+        text-align: center;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
   }
