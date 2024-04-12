@@ -5,6 +5,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Professional Portfolio</title>
+    <link rel="stylesheet" href="assets/css/reset.css"/>
     <link rel="stylesheet" href="assets/css/style.css"/>
 </head>
 
@@ -16,72 +17,78 @@
         <nav>
             <ul>
                 <li>
-                    <a href="#about-me">About Me</a>
+                    <a href="#about-me">About</a>
                 </li>
                 <li>
                     <a href="#work">Work</a>
                 </li>
                 <li>
-                    <a href="#contact-me">Contact Me</a>
+                    <a href="#contact-me">Contact</a>
                 </li>
             </ul>
         </nav>
     </header>
-
     <main>
         <section id="about-me">
-                <h2>About Me</h2>
-                <div class="row">
-                    <div>
-                        <img src="./assets/images/headshot.jpg" alt="">
-                    </div>
-                    <p>
-                        Hello, and welcome to my page!!!<br/><br/>
-                        My name is Mykola Nastyn but I go by Nick to make it easier on people. <br/><br/>
-                        I am from Ukraine. <br/><br/>
-                        I am currently studying web development at UC Berkeley.<br/><br/>
-                        I have a dog and a cat, and I love them a lot.<br/><br/>
-                    </p>
-                </div>
+            <h2>About Me</h2>
+            <div class="row banner">
+                <figure >
+                    <img class="headshot" src="./assets/images/headshot.jpg" alt="">
+                </figure>
+                <p class="about-info">
+                    Hello, and welcome to my page!!!<br/><br/>
+                    My name is Mykola Nastyn but I go by Nick to make it easier on people. <br/><br/>
+                    I am from Ukraine. <br/><br/>
+                    I am currently studying web development at UC Berkeley.<br/><br/>
+                    I have a dog and a cat, and I love them a lot.<br/><br/>
+                </p>
+            </div>
         </section>
 
         <section id="work">
             <h2>Work</h2>
-            <div class="row">
-                <figure class="card work-card">
-                    <h2 class="card-header">Prework Module</h2>
-                    <div class="card-body">
-                        <img src="./assets/images/prework.png" alt="">
-                    </div>
+            <div class="row justify-center">
+                <figure class="work-card">
+                    <a href="https://koliandrik.github.io/prework-study-guide/"><img width="500px" height="500px" src="./assets/images/prework.png" alt="Screenshot of wepage"><figcaption>Prework Study Guide</figcaption></a>
                 </figure>
-                <figure class="card work-card">
-                    <h2 class="card-header">Week-1 Assignment</h2>
-                    <div class="card-body">
-                        <img src="./assets/images/week-1.png" alt="">
-                    </div>
+            </div>
+           
+            <div class="row justify-center">
+                <figure class="work-card">
+                    <a href="https://koliandrik.github.io/Week-1-Assignment/"><img width="300px" height="300px" src="./assets/images/week-1.png" alt="Screenshot of Webpage"><figcaption>Horiseon</figcaption></a>
+                </figure>
+                <figure class="work-card">
+                        <a href=""><img width="300px" height="300px" src="placeholder" alt="Screenshot of Webpage"><figcaption>Coming Soon...</figcaption></a>
+                </figure>
+                <figure class="work-card">
+                    <a href=""><img width="300px" height="300px" src="placeholder" alt="Screenshot of Webpage"><figcaption>Coming Soon...</figcaption></a>
+                </figure>
+                <figure class="work-card">
+                    <a href=""><img width="300px" height="300px" src="placeholder" alt="Screenshot of Webpage"><figcaption>Coming Soon...</figcaption></a>
                 </figure>
             </div>
         </section>
 
         <section id="contact-me">
             <h2>Contact Information</h2>
-            <div class="row">
-                <p>
-                    7924 Twin Oaks Ave.
-                    <br/>
-                    Citrus Heights, CA
-                    <br/>
-                    95610
-                    <br/>
-                    (916)410-9071
-                    <br/>
-                    <a href="koliandrik@gmail.com">koliandrik@gmail.com</a>
-                </p>
-            </div>
-        </section>
-    </main>
-
+            <p>
+                7924 Twin Oaks Ave.
+                <br/>
+                <br/>
+                Citrus Heights, CA
+                <br/>
+                <br/>
+                95610
+                <br/>
+                <br/>
+                (916)410-9071
+                <br/>
+                <br/>
+                <a href="mailto: koliandrik@gmail.com">koliandrik@gmail.com</a>
+            </p>
+        </section>  
+    </main> 
     <footer>
-        <span>Thanks for visiting!</span>
+        <h2>Thanks for visiting!</h2>
     </footer>
 </body>
