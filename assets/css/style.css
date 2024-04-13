@@ -59,9 +59,11 @@ footer{
 nav ul {
     display: flex;
     justify-content: space-between;
+    text-align: center;
 }
 
 nav a {
+    display: flex;
     font-size: 2.5rem;
     color: var(--yellow);
     font-weight: bold;
@@ -184,16 +186,19 @@ figcaption {
       flex-direction: column;
       text-align:end;
       justify-content: center;
-      margin:0 0 2rem;
-      max-height: 15rem;
+      margin:  0 0 2rem;
+      padding: 0;
+      max-height: 10rem;
     }
-
-    nav ul {
-        padding: 2rem 0 0;
+    
+    h1 {
+        padding: 0 0;
     }
 
     nav a {
         font-size: 1.5rem;
+        padding: 1rem;
+        margin: 0;
     }
 
     body {
